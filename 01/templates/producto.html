@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<a href="/" class="back">← Volver</a>
+
+<section class="detail-card">
+    <h1>{{ producto.nombre }}</h1>
+    <p>{{ producto.descripcion }}</p>
+
+    <div class="price">
+        ${{ producto.precio }}
+    </div>
+</section>
+
+{% endblock %}
